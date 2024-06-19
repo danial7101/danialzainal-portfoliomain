@@ -91,15 +91,15 @@ header {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     #headernav ul {
         display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 65px;
         left: 0;
-        background-color: rgba(39, 28, 46, 0.9);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     #headernav ul.show {

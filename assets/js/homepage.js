@@ -1,4 +1,14 @@
 
+// // Toggle button functionality for mobile view
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     const toggleButton = document.getElementById('toggleButton');
+//     const navUl = document.querySelector('#headernav ul');
+
+//     toggleButton.addEventListener('click', () => {
+//         navUl.classList.toggle('show');
+//     });
+// });
+
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('nav a[href^="#"]');
     
@@ -41,11 +51,4 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
 });
 
-// Toggle button functionality for mobile view
-const toggleButton = document.getElementById('toggleButton');
-const navUl = document.querySelector('#headernav ul');
-
-toggleButton.addEventListener('click', () => {
-    navUl.classList.toggle('show');
-});
 

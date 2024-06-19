@@ -162,14 +162,24 @@
 </footer>
 
 <footer class="mobile">
-    <a href="https://www.linkedin.com/in/danial-zainal-84776a12a/" class="link"><ion-icon class="fa fa-github fa-3x" aria-hidden="true" name="logo-github"></ion-icon></a>
-    <a href="https://www.instagram.com/_daniall_/" class="link"><ion-icon class="fa fa-github fa-3x" aria-hidden="true" name="logo-codepen"></ion-icon></a>
+    <a href="https://www.linkedin.com/in/danial-zainal-84776a12a/" class="link"><ion-icon class="fa fa-github fa-3x" aria-hidden="true" name="logo-linkedin"></ion-icon></a>
+    <a href="https://www.instagram.com/_daniall_/" class="link"><ion-icon class="fa fa-github fa-3x" aria-hidden="true" name="logo-instagram"></ion-icon></a>
     <a href="https://wa.link/kmc78t" class="link"><ion-icon class="fa fa-github fa-3x" aria-hidden="true" name="logo-whatsapp"></ion-icon></a>
     <a href="mailto:danial7101@gmail.com" class="link"><ion-icon class="fa fa-github fa-3x" aria-hidden="true" name="mail"></ion-icon></a>
     <div class="copyright">
         <p><span style="color: plum;"> Made by </span><span>&nbsp;Danial Zainal&nbsp;</span></p>
     </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const toggleButton = document.getElementById('toggleButton');
+        const navUl = document.querySelector('#headernav ul');
+
+        toggleButton.addEventListener('click', () => {
+            navUl.classList.toggle('show');
+        });
+    });
+</script>
 <script src="../assets/js/homepage.js"></script>
 </body>
 </html>
