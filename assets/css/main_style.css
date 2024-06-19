@@ -92,7 +92,7 @@ header {
 }
 
 @media (max-width: 500px) {
-    #headernav ul {
+    #mobile{
         display: none;
         flex-direction: column;
         width: 100%;
@@ -102,8 +102,8 @@ header {
         background-color: rgba(0, 0, 0, 0.5);
     }
 
-    #headernav ul.show {
-        display: flex;
+    #mobile.show {
+        display: column;
     }
 
     #toggleButton {

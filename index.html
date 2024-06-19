@@ -17,7 +17,7 @@
         <nav id="headernav">
             <!-- <p>Danial Zainal</p> -->
             <span id="toggleButton">&#9776;</span>
-            <ul>
+            <ul class="" id="mobile">
                 <li><a href="#headernav" class="btn btn6">Home</a></li>
                 <li><a href="#aboutMe" class="btn btn6">About</a></li>
                 <li><a href="#projects" class="btn btn6">Projects</a></li>
@@ -162,16 +162,6 @@
         <p><span style="color: plum;"> Made by </span><span>&nbsp;Danial Zainal&nbsp;</span></p>
     </div>
 </footer>
-<script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const toggleButton = document.getElementById('toggleButton');
-        const navUl = document.querySelector('#headernav ul');
-
-        toggleButton.addEventListener('click', () => {
-            navUl.classList.toggle('show');
-        });
-    });
-</script>
 <script src="./assets/js/homepage.js"></script>
 </body>
 </html>
