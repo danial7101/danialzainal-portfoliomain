@@ -12,11 +12,13 @@ body {
 		#281e40,
 		#2b1b52
 	);
+    cursor: url(https://assets.codepen.io/4806767/plink-cursor.svg), auto;
 	background-size: 400% 400%;
 	animation: gradient 13s ease infinite;
 	height: 100vh;
     margin: 0;
     padding: 0;
+    
 }
 @keyframes gradient {
 	0% {
@@ -30,6 +32,18 @@ body {
 	}
 }
 
+.pointer, button, a {
+	cursor: url("https://assets.codepen.io/4806767/plink-cursor-pointer.svg") 4 4, pointer;
+}
+/* note the offset */
+
+.drag {
+	cursor: url("https://assets.codepen.io/4806767/plink-cursor-drag-hover.svg") 4 4, grab;
+}
+
+.dragging {
+	cursor: url("https://assets.codepen.io/4806767/plink-cursor-dragging.svg") 4 4, grabbing;
+}
 
 header {
     background-color: rgba(39, 28, 46, 0.5); /* Semi-transparent background */
