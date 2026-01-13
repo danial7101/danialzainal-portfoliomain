@@ -1,11 +1,15 @@
 
 // Toggle button functionality for mobile view
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('toggleButton');
-    const navUl = document.querySelector('#headernav ul');
+    const navUl = document.getElementById('mobile');
+
+    if (!toggleButton || !navUl) {
+        return;
+    }
 
     toggleButton.addEventListener('click', () => {
-        navUl.classList.toggle('hidden');
+        navUl.classList.toggle('show');
     });
 });
 
@@ -29,10 +33,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-        document.getElementById('toggleButton').addEventListener('click', function() {
-            var nav = document.querySelector('#headernav ul');
-            nav.classList.toggle('show');
-        });
+document.addEventListener('DOMContentLoaded', () => {
+    const navUl = document.getElementById('mobile');
+
+    if (!navUl) {
+        return;
+    }
+
+    navUl.addEventListener('click', (event) => {
+        const target = event.target;
+        if (target && target.tagName === 'A') {
+            navUl.classList.remove('show');
+        }
+    });
+});
 
     let lastScrollTop = 0;
 const header = document.querySelector('header');
